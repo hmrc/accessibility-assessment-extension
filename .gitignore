@@ -6,7 +6,9 @@ lib_managed
 tmp
 .history
 dist
+/.bsp
 /.idea
+/.parcel-cache
 /*.iml
 /*.ipr
 /out
