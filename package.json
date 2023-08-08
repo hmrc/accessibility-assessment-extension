@@ -31,7 +31,7 @@
     "parcel": "^2.9.3",
     "process": "^0.11.10",
     "rimraf": "^5.0.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.6"
   },
   "dependencies": {
     "axe-core": "^4.7.1"
