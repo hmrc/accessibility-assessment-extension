@@ -1,11 +1,10 @@
 chrome.runtime.onMessage.addListener((message) => {
   const axeResults = message.axeResults;
-  const encodedData = btoa(JSON.stringify(axeResults));
-  const url = `data:application/json;base64,${encodedData}`;
   const timestamp = Date.parse(axeResults.timestamp);
+  const jsonBlob = new Blob([JSON.stringify(axeResults)], {type: "data:application/json;charset=utf-8"});
 
   chrome.downloads.download({
-    url,
-    filename: `accessibility-assessment/${timestamp}/axeResults.json`,
+    'url': URL.createObjectURL(jsonBlob),
+    'filename': `accessibility-assessment/${timestamp}/axeResults.json`,
   });
 });
