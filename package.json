@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Automatic accessibility checks.",
   "scripts": {
-    "prebuild": "npx rimraf dist",
-    "build": "parcel build src/manifest.json",
+    "prebuild": "npx rimraf dist dist_firefox .parcel-cache",
+    "build": "parcel build src/manifest.json && cp -r dist dist_firefox && jq 'if .background.service_worker then .background.scripts = [.background.service_worker] + .background.scripts | del(.background.service_worker) else . end' dist/manifest.json > dist_firefox/manifest.json",
     "start": "parcel watch src/manifest.json --host localhost"
   },
   "contributors": [
