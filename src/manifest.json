@@ -14,7 +14,7 @@
       "run_at": "document_end"
     }
   ],
-  "permissions": ["downloads", "downloads.shelf"],
+  "permissions": ["downloads"],
   "icons": {
     "16": "assets/images/icon.png",
     "48": "assets/images/icon.png",
