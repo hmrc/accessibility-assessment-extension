@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener((message) => {
   const axeResults = message.axeResults;
-  const encodedData = btoa(JSON.stringify(axeResults));
+  const encodedData = btoa(unescape(encodeURIComponent(JSON.stringify(axeResults))));
   const url = `data:application/json;base64,${encodedData}`;
   const timestamp = Date.parse(axeResults.timestamp);
 
