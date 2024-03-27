@@ -6,8 +6,6 @@ window.onload = async () => {
 };
 
 async function getAxeResults() {
-  const axeContext = document.cloneNode(true);
-
   const axeOptions: axe.RunOptions = {
     runOnly: {
       type: 'tag',
@@ -24,7 +22,7 @@ async function getAxeResults() {
   };
 
   const axeResults = await new Promise((resolve) => {
-    axe.run(axeContext, axeOptions, (err, results) => {
+    axe.run(axeOptions, (err, results) => {
       if (err) throw err;
       resolve(results);
     });
