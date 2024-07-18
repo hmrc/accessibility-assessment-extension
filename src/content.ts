@@ -20,12 +20,10 @@ async function getAxeResults() {
     },
   };
 
-  const axeResults = await new Promise((resolve) => {
+  return await new Promise((resolve) => {
     axe.run(axeOptions, (err, results) => {
       if (err) throw err;
       resolve(results);
     });
   });
-
-  return axeResults;
 }
