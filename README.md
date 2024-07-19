@@ -14,9 +14,6 @@ npm start
 
 ### Build
 
-> [!WARNING]
-> When updating the version in package.json, please ensure to run the build command to also update the version in manifest.json
-
 Build as follows:
 
 ```bash
@@ -28,6 +25,25 @@ npm run build
 Run tests with
 ```bash
 npm test
+```
+
+## Versioning
+
+When updating the accessibility-assessment-extension, you should also update the version number in package.json. Use one of the following commands based on the changes made to the code:
+
+Patch Release: (e.g., 1.0.0 to 1.0.1)
+```bash
+npm version patch
+```
+
+Minor Release: (e.g., 1.0.0 to 1.1.0)
+```bash
+npm version minor
+```
+
+Major Release: (e.g., 1.0.0 to 2.0.0)
+```bash
+npm version major
 ```
 
 ## License
