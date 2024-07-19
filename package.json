@@ -15,7 +15,8 @@
     "test": "jest",
     "prebuild": "rimraf dist",
     "update-version": "node update-manifest-version.js",
-    "build": "npm run update-version && parcel build src/manifest.json",
+    "version": "npm run update-version",
+    "build": "parcel build src/manifest.json",
     "start": "parcel watch src/manifest.json --host localhost"
   },
   "contributors": [
