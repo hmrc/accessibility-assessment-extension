@@ -14,6 +14,9 @@ npm start
 
 ### Build
 
+> [!WARNING]
+> When updating the version in package.json, please ensure to run the build command to also update the version in manifest.json
+
 Build as follows:
 
 ```bash
