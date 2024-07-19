@@ -9,12 +9,20 @@
   },
   "content_scripts": [
     {
-      "js": ["content.ts"],
-      "matches": ["http://localhost/*", "https://*.tax.service.gov.uk/*"],
+      "js": [
+        "content.ts"
+      ],
+      "matches": [
+        "http://localhost/*",
+        "https://*.tax.service.gov.uk/*"
+      ],
       "run_at": "document_end"
     }
   ],
-  "permissions": ["downloads", "downloads.shelf"],
+  "permissions": [
+    "downloads",
+    "downloads.shelf"
+  ],
   "icons": {
     "16": "assets/images/icon.png",
     "48": "assets/images/icon.png",

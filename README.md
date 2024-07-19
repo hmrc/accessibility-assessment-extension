@@ -27,6 +27,30 @@ Run tests with
 npm test
 ```
 
+## Versioning
+
+> [!WARNING]
+> Please do not update the package.json version manually, 
+> always use the correct npm version command as this will ensure that the manifest.json version is kept in sync.
+
+
+When updating the accessibility-assessment-extension, you should also update the version number in package.json. Use one of the following commands based on the changes made to the code:
+
+Patch Release: (e.g., 1.0.0 to 1.0.1)
+```bash
+npm version patch
+```
+
+Minor Release: (e.g., 1.0.0 to 1.1.0)
+```bash
+npm version minor
+```
+
+Major Release: (e.g., 1.0.0 to 2.0.0)
+```bash
+npm version major
+```
+
 ## License
 
 This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").

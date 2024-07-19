@@ -1,6 +1,6 @@
 {
   "name": "accessibility-assessment",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Automatic accessibility checks.",
   "engines": {
     "node": "^20",
@@ -14,6 +14,8 @@
   "scripts": {
     "test": "jest",
     "prebuild": "rimraf dist",
+    "update-version": "node update-manifest-version.js",
+    "version": "npm run update-version",
     "build": "parcel build src/manifest.json",
     "start": "parcel watch src/manifest.json --host localhost"
   },
