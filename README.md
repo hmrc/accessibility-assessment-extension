@@ -1,5 +1,10 @@
 # accessibility-assessment-extension
 
+> [!CAUTION]
+> The source code for this browser extension has moved to [hmrc/ui-test-runner](https://github.com/hmrc/ui-test-runner/tree/main/browser-extensions/chromium-accessibility-assessment)
+>
+> This was done to simplify the build process because at the moment it's only used during automated browser-based tests so we can skip having separate build / release process to the library which uses it.
+
 A web extension for automatic accessibility checks.
 
 ## Usage
